@@ -1,0 +1,260 @@
+﻿
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GameTitle {
+    text-align: center;
+    border: black solid 2px;
+}
+
+.grid-container {
+    flex: 9;
+    display: grid;
+    grid-template-columns: 1fr repeat(14, 0.5fr) 1fr;
+    grid-template-rows: 1fr repeat(5, 0.5fr) 1fr;
+    gap: 0px 0px;
+    margin: 20px;
+}
+
+.GameTitle {
+    grid-area: 1 / 1 / 2 / 17;
+}
+
+.R3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.B6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.R9 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.R12 {
+    grid-area: 2 / 5 / 3 / 6;
+}
+
+.R18 {
+    grid-area: 2 / 7 / 3 / 8;
+}
+
+.B15 {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+.R21 {
+    grid-area: 2 / 8 / 3 / 9;
+}
+
+.B24 {
+    grid-area: 2 / 9 / 3 / 10;
+}
+
+.R27 {
+    grid-area: 2 / 10 / 3 / 11;
+}
+
+.R30 {
+    grid-area: 2 / 11 / 3 / 12;
+}
+
+.B33 {
+    grid-area: 2 / 12 / 3 / 13;
+}
+
+.R36 {
+    grid-area: 2 / 13 / 3 / 14;
+}
+
+.TwoToOne {
+    grid-area: 2 / 14 / 3 / 15;
+}
+
+.B2 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.R5 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.B8 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.B11 {
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+.R14 {
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+.B17 {
+    grid-area: 3 / 7 / 4 / 8;
+}
+
+.B20 {
+    grid-area: 3 / 8 / 4 / 9;
+}
+
+.R23 {
+    grid-area: 3 / 9 / 4 / 10;
+}
+
+.B26 {
+    grid-area: 3 / 10 / 4 / 11;
+}
+
+.B29 {
+    grid-area: 3 / 11 / 4 / 12;
+}
+
+.R32 {
+    grid-area: 3 / 12 / 4 / 13;
+}
+
+.B35 {
+    grid-area: 3 / 13 / 4 / 14;
+}
+
+.TwoToOne2 {
+    grid-area: 3 / 14 / 4 / 15;
+}
+
+.R1 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.B4 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.R7 {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.B10 {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+.B13 {
+    grid-area: 4 / 6 / 5 / 7;
+}
+
+.R16 {
+    grid-area: 4 / 7 / 5 / 8;
+}
+
+.R19 {
+    grid-area: 4 / 8 / 5 / 9;
+}
+
+.B22 {
+    grid-area: 4 / 9 / 5 / 10;
+}
+
+.R25 {
+    grid-area: 4 / 10 / 5 / 11;
+}
+
+.B28 {
+    grid-area: 4 / 11 / 5 / 12;
+}
+
+.B31 {
+    grid-area: 4 / 12 / 5 / 13;
+}
+
+.R34 {
+    grid-area: 4 / 13 / 5 / 14;
+}
+
+.TwoToOne3 {
+    grid-area: 4 / 14 / 5 / 15;
+}
+
+.FirstTwelve {
+    grid-area: 5 / 2 / 6 / 6;
+}
+
+.SecondTwelve {
+    grid-area: 5 / 6 / 6 / 10;
+}
+
+.ThirdTwelve {
+    grid-area: 5 / 10 / 6 / 14;
+}
+
+.OneToEighteen {
+    grid-area: 6 / 2 / 7 / 4;
+}
+
+.Even {
+    grid-area: 6 / 4 / 7 / 6;
+}
+
+.Red {
+    grid-area: 6 / 6 / 7 / 8;
+}
+
+.Black {
+    grid-area: 6 / 8 / 7 / 10;
+}
+
+.Odd {
+    grid-area: 6 / 10 / 7 / 12;
+}
+
+.nineteenTo36 {
+    grid-area: 6 / 12 / 7 / 14;
+}
+
+.Zero {
+    grid-area: 4 / 1 / 6 / 2;
+}
+
+.DoubleZero {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+label {
+    font-weight: 700;
+}
+
+.R {
+    color: red;
+}
+
+body {
+    background: lightgreen;
+}
+
+.grid-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    text-align: center;
+}
+
+.GameTitle {
+    margin: 15px;
+}
+
+.box {
+}

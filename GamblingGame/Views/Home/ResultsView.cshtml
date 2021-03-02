@@ -1,0 +1,23 @@
+﻿@using System.Security.Cryptography
+@model GamblingGame.Models.Game
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/resultCSS.css" rel="stylesheet" />
+    <title>result</title>
+</head>
+<body>
+<section class="ResultSection">
+    <h1>Results</h1>
+    <p> You have placed bets on the following numbers: @foreach(var x in @Model.Box) @(x + ",");  </p>
+    <p> @Results.WinResults(@Results.Spin(),@Model.Box,@Model)</p>
+    <p> You placed $ @Model.BetAmount on your selection </p>
+    <a asp-action="Index">Play Again?</a>
+</section>
+
+</body>
+</html> 

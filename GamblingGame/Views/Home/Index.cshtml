@@ -1,0 +1,228 @@
+﻿@model GamblingGame.Models.Game
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+    <form asp-action="Index" method="post" class="grid-container">
+    <div class="GameTitle">
+        <h1>Darius's Roulette Table code is ugly but works:</h1>
+        <p>Please only select one betting style: IE. high/low or Red/black or Even/ODD;single or multiple Number bets or having multiple dozens will work</p>
+    </div>
+    <div class="R3 R box">
+        <input type="checkbox" id="R3" name="box" value="3">
+        <label for="R3">3</label>
+    </div>
+    <div class="B6  box">
+        <input type="checkbox" id="B6" name="box" value="6">
+        <label for="B6">6</label>
+    </div>
+    <div class="R9 R box">
+        <input type="checkbox" id="R9" name="box" value="9">
+        <label for="R9">9</label>
+    </div>
+    <div class="R12 R box">
+        <input type="checkbox" id="R12" name="box" value="12">
+        <label for="R12">12</label>
+    </div>
+    <div class="R18 R box">
+        <input type="checkbox" id="R18" name="box" value="18">
+        <label for="R18">18</label>
+    </div>
+    <div class="B15 box">
+        <input type="checkbox" id="B15" name="box" value="15">
+        <label for="B15">15</label>
+    </div>
+    <div class="R21 R box">
+        <input type="checkbox" id="R21" name="box" value="21">
+        <label for="R21">21</label>
+    </div>
+    <div class="B24 box">
+        <input type="checkbox" id="B24" name="box" value="24">
+        <label for="B24">24</label>
+    </div>
+    <div class="R27 R box">
+        <input type="checkbox" id="R27" name="box" value="27">
+        <label for="R27">27</label>
+    </div>
+    <div class="R30 R box">
+        <input type="checkbox" id="R30" name="box" value="30">
+        <label for="R30">30</label>
+    </div>
+    <div class="B33 box">
+        <input type="checkbox" id="B33" name="box" value="33">
+        <label for="B33">33</label>
+    </div>
+    <div class="R36 R box">
+        <input type="checkbox" id="B36" name="box" value="36">
+        <label for="B36">36</label>
+    </div>
+    <div class="TwoToOne">
+        <h3>2 to 1</h3>
+    </div>
+    <div class="B2 box">
+        <input type="checkbox" id="B2" name="box" value="2">
+        <label for="B2">2</label>
+    </div>
+    <div class="R5 R box">
+        <input type="checkbox" id="R5" name="box" value="5">
+        <label for="R5">5</label>
+    </div>
+    <div class="B8 box">
+        <input type="checkbox" id="B8" name="box" value="8">
+        <label for="B8">8</label>
+    </div>
+    <div class="B11 box">
+        <input type="checkbox" id="B11" name="box" value="11">
+        <label for="B11">11</label>
+    </div>
+    <div class="R14 R box">
+        <input type="checkbox" id="R14" name="box" value="14">
+        <label for="R14">14</label>
+    </div>
+    <div class="B17 box">
+        <input type="checkbox" id="B17" name="box" value="17">
+        <label for="B17">17</label>
+    </div>
+    <div class="B20 box">
+        <input type="checkbox" id="B20" name="box" value="20">
+        <label for="B20">20</label>
+    </div>
+    <div class="R23 R box">
+        <input type="checkbox" id="R23" name="box" value="23">
+        <label for="R23">23</label>
+    </div>
+    <div class="B26 box">
+        <input type="checkbox" id="B26" name="box" value="26">
+        <label for="B26">26</label>
+    </div>
+    <div class="B29 box">
+        <input type="checkbox" id="B29" name="box" value="29">
+        <label for="B29">29</label>
+    </div>
+    <div class="R32 R box">
+        <input type="checkbox" id="R32" name="box" value="32">
+        <label for="R32">32</label>
+    </div>
+    <div class="B35 box">
+        <input type="checkbox" id="B35" name="box" value="35">
+        <label for="B35">35</label>
+    </div>
+    <div class="TwoToOne2">
+        <h3>2 to 1</h3>
+    </div>
+    <div class="R1 R box">
+        <input type="checkbox" id="R1" name="box" value="1">
+        <label for="R1">1</label>
+    </div>
+    <div class="B4 box">
+        <input type="checkbox" id="B4" name="box" value="4">
+        <label for="B4">4</label>
+    </div>
+    <div class="R7 R box">
+        <input type="checkbox" id="R7" name="box" value="7">
+        <label for="R7">7</label>
+    </div>
+    <div class="B10 box">
+        <input type="checkbox" id="B10" name="box" value="10">
+        <label for="B10">10</label>
+    </div>
+    <div class="B13 box">
+        <input type="checkbox" id="B13" name="box" value="13">
+        <label for="B13">13</label>
+    </div>
+    <div class="R16 R box">
+        <input type="checkbox" id="R16" name="box" value="16">
+        <label for="R16">16</label>
+    </div>
+    <div class="R19 R box">
+        <input type="checkbox" id="R19" name="box" value ="19">
+        <label for="R19">19</label>
+    </div>
+    <div class="B22 box">
+        <input type="checkbox" id="B22" name="box" value="22">
+        <label for="B22">22</label>
+    </div>
+    <div class="R25 R box">
+        <input type="checkbox" id="R25" name="box" value="25">
+        <label for="R25">25</label>
+    </div>
+    <div class="B28 box">
+        <input type="checkbox" id="B28" name="box" value="28">
+        <label for="B28">28</label>
+    </div>
+    <div class="B31 box">
+        <input type="checkbox" id="B31" name="box" value="31">
+        <label for="B31">31</label>
+    </div>
+    <div class="R34 R box">
+        <input type="checkbox" id="R34" name="box" value="34">
+        <label for="R34">34</label>
+    </div>
+    <div class="TwoToOne3">
+        <h3>2 to 1</h3>
+    </div>
+    <div class="FirstTwelve">
+        <input type="checkbox" id="FirstTwelve" name="firstTwelve" value="true">
+        <label for="FirstTwelve">1st 12</label>
+    </div>
+    <div class="SecondTwelve">
+        <input type="checkbox" id="SecondTwelve" name="secondTwelve" value="true">
+        <label for="SecondTwelve">2nd 12</label>
+    </div>
+    <div class="ThirdTwelve">
+        <input type="checkbox" id="ThirdTwelve" name="thirdTwelve" value="true">
+        <label for="ThirdTwelve">3rd 12</label>
+    </div>
+    <div class="OneToEighteen">
+        <input type="checkbox" id="OneToEighteen" name="low" value="true">
+        <label for="OneToEighteen">1 to 18</label>
+    </div>
+    <div class="Even">
+        <input type="checkbox" id="Even" name="even" value="true">
+        <label for="Even">Even</label>
+    </div>
+    <div class="Red R">
+        <input type="checkbox" id="Red" name="red" value="true">
+        <label for="Red">Red</label>
+    </div>
+    <div class="Black">
+        <input type="checkbox" id="Black" name="black" value="true">
+        <label for="Black">Black</label>
+    </div>
+    <div class="Odd">
+        <input type="checkbox" id="Odd" name="odd" value="true">
+        <label for="Odd">Odd</label>
+    </div>
+    <div class="nineteenTo36">
+        <input type="checkbox" id="nineteenTo36" name="high" value="true">
+        <label for="nineteenTo36">19 to 36</label>
+    </div>
+    <div class="Zero">
+        <input type="checkbox" id="zero" name="box" value="0">
+        <label for="zero">0</label>
+    </div>
+    <div class="DoubleZero">
+        <input type="checkbox" id="DoubleZero" name="box"value="37">
+        <label for="DoubleZero">00</label>
+    </div>
+    <input asp-for="BetAmount" type="text" value="" placeholder="Bet amount: min $10"/>
+    <input type="submit">
+    
+    </form>
+   
+    </main>
+</body>
+</html>
