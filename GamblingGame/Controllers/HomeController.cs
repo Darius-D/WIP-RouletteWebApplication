@@ -47,33 +47,6 @@ namespace GamblingGame.Controllers
 
         
         
-        //[HttpPost]
-        //public ActionResult Index(int[] box, string[]oddOrEven, string[] redOrBlack,string[] lowOrHigh, string[] dozens)
-        //{
-        //    foreach (var val in dozens)
-        //    {
-        //        Results.AddDozen(val);
-        //    }
-        //    foreach (var val in lowOrHigh)
-        //    {
-        //        Results.LowOrHigh = val;
-        //    }
-        //    foreach (var val in redOrBlack)
-        //    {
-        //        Results.RedOrBlack = val;
-        //    }
-        //    foreach (var x in oddOrEven)
-        //    {
-        //        Results.OddOrEven = x;
-        //    }
-        //    foreach (var val in box)
-        //    {
-        //        Results.AddToken(val);
-        //    }
-        //    Results.Spin();
-        //    return View("ResultsView");
-            
-        //}
       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
