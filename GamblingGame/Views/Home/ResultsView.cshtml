@@ -16,7 +16,9 @@
     <p> You have placed bets on the following numbers: @foreach(var x in @Model.Box) @(x + ",");  </p>
     <p> @Results.WinResults(@Results.Spin(),@Model.Box,@Model)</p>
     <p> You placed $ @Model.BetAmount on your selection </p>
-    <a asp-action="Index">Play Again?</a>
+    <p>Thank you for playing my game. I hope you enjoyed my application even with its currently limited betting combos. I will be continuing to build on this web application to improve my skills with algorithms and model binding.</p>
+    <p>please check out my github at <a target="_blank" class="link" href="https://github.com/Darius-D">my Github</a> and my personally created mobile and desktop friendly website at <a target="_blank"class="link" href="http://dariusdubose.com/">My personal Website</a> </p>
+    <a class="replay" asp-action="Index">Play Again?</a>
 </section>
 
 </body>

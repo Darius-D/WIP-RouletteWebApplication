@@ -18,8 +18,8 @@
     <main>
     <form asp-action="Index" method="post" class="grid-container">
     <div class="GameTitle">
-        <h1>Darius' Roulette Table code:</h1>
-        <p>Please only select one betting style: IE. high/low or Red/black or Even/ODD;single or multiple Number bets or having multiple dozens will work</p>
+        <h1>Darius' Roulette Table:</h1>
+        <p>currently only works with a single one betting style at a time: IE. high/low or Red/black or Even/ODD;single or multiple Number bets or having multiple dozens will work</p>
     </div>
     <div class="R3 R box">
         <input type="checkbox" id="R3" name="box" value="3">
@@ -218,8 +218,8 @@
         <input type="checkbox" id="DoubleZero" name="box"value="37">
         <label for="DoubleZero">00</label>
     </div>
-    <input asp-for="BetAmount" type="text" value="" placeholder="Bet amount: min $10"/>
-    <input type="submit">
+    <input asp-for="BetAmount" type="text" value="" class="betAmount"placeholder="Bet amount: min $10"/>
+    <input type="submit"class="submitButton">
     
     </form>
    

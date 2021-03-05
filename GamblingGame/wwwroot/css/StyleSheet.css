@@ -231,6 +231,9 @@ main {
 .DoubleZero {
     grid-area: 2 / 1 / 4 / 2;
 }
+.betAmount{grid-area: 7/6/8/10; height: 30px;}
+
+.submitButton{ grid-area: 8/6/9/10;}
 
 label {
     font-weight: 700;
@@ -254,6 +257,7 @@ body {
 
 .GameTitle {
     margin: 15px;
+    border-radius: 8px;
 }
 
 .box {
