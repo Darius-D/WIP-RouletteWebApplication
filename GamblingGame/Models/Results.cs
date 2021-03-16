@@ -21,8 +21,8 @@ namespace GamblingGame.Models
 
         public static string WinResults(int spinValue, List<int> boxValues, Game obj)
         {
-            if (!obj.Red && !obj.Black && !obj.Even && !obj.High && !obj.Odd && !obj.FirstTwelve && !obj.SecondTwelve &&
-                !obj.ThirdTwelve && !obj.Low && !obj.High)
+            if (!obj.Red && !obj.Black && !obj.Even && !obj.High && !obj.Odd && 
+                !obj.FirstTwelve && !obj.SecondTwelve && !obj.ThirdTwelve && !obj.Low && !obj.High)
             {
 
                 foreach (var value in boxValues)
@@ -69,35 +69,28 @@ namespace GamblingGame.Models
             {
                 if (obj.Even)
                 {
-                    var EvenValues = new int[] {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36};
-                    foreach (var value in EvenValues)
-                    {
-                        if (spinValue == value)
+                   
+                        if (spinValue % 2 == 0)
                         {
                             return $"You Win!, You placed your bets on Even and the ball landed on {spinValue}! You won {GenerateEarnings(obj.BetAmount, true, "EvenOdd")}";
                         }
-                    }
 
-                    return
-                        $"You Loose, Ball landed on{spinValue}! You placed you bets on Even and Lost {GenerateEarnings(obj.BetAmount, false, "EvenOdd")}";
+                        return $"You Loose, Ball landed on{spinValue}! You placed you bets on Even and Lost {GenerateEarnings(obj.BetAmount, false, "EvenOdd")}";
                 }
                 else
                 {
-                    var OddValues = new int[] {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35};
-                    foreach (var value in OddValues)
+
+
+                    if (spinValue % 2 != 0) 
                     {
-                        if (spinValue == value)
-                        {
-                            return $"You Win!, You placed your bets on Odd and the ball landed on {spinValue}! You won {GenerateEarnings(obj.BetAmount, true, "EvenOdd")}";
-                        }
+                        return $"You Win!, You placed your bets on Odd and the ball landed on {spinValue}! You won {GenerateEarnings(obj.BetAmount, true, "EvenOdd")}";
                     }
 
-                    return
-                        $"You Loose, Ball landed on{spinValue}! You placed you bets on Odd and Lost {GenerateEarnings(obj.BetAmount, false, "EvenOdd")}";
+                    return $"You Loose, Ball landed on{spinValue}! You placed you bets on Odd and Lost {GenerateEarnings(obj.BetAmount, false, "EvenOdd")}";
                 }
             }
 
-            if (obj.FirstTwelve || obj.SecondTwelve | obj.ThirdTwelve)
+            if (obj.FirstTwelve || obj.SecondTwelve || obj.ThirdTwelve)
             {
                 if (obj.FirstTwelve && obj.SecondTwelve)
                 {
